@@ -1,0 +1,7 @@
+root = true
+[*.js]
+indent_style = space
+indent_size = 2
+charset = utf-8
+visual_wrap = true
+max_line_length = 80
