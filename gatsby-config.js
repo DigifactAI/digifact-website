@@ -44,13 +44,12 @@ module.exports = {
       options: {
         trackingIds: ["G-GNBJBJG8QQ"],
         gtagConfig: {
+          anonymize_ip: true,
           cookie_expires: 0,
         },
         pluginConfig: {
           head: true,
           respectDNT: true,
-          origin: "https://digifact.tech/",
-          delayOnRouteUpdate: 0,
         },
       },
     },
