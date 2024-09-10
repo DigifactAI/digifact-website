@@ -39,6 +39,21 @@ module.exports = {
     },
     "gatsby-plugin-postcss",
     "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-GNBJBJG8QQ"],
+        gtagConfig: {
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+          origin: "https://digifact.tech/",
+          delayOnRouteUpdate: 0,
+        },
+      },
+    },
   ],
   pathPrefix: "/digifact-website",
 };
