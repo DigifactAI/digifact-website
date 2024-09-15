@@ -12,7 +12,7 @@ module.exports = {
     title: `DigiFact`,
     description: `AI deepfake detection platform helps enterprises and governments detect AI-generated content and identity at scale.`,
     author: "Sourav",
-    siteUrl: "digifact.tech/",
+    siteUrl: "https://digifact.tech/",
   },
   plugins: [
     `gatsby-plugin-image`,
