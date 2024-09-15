@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="w-4/5 m-auto py-8">
         <div className="w-full grid grid-cols-4 gap-4 max-[640px]:grid-cols-2">
           <div className="max-[640px]:mb-4">
-            <h1 className="logo">DigiFact</h1>
+            <h1 className="logo pb-1">DigiFact</h1>
             <ul className="flex gap-4">
               <li>
                 <i className="fa-solid fa-envelope"></i>
@@ -23,7 +23,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="max-[640px]:mb-4">
-            <h2 className="text-[#fff]/[0.6]">Solutions</h2>
+            <h2 className="text-[#fff]/[0.6] pb-1">Solutions</h2>
             <ul className="space-y-2">
               <li>
                 <a href="#data-extraction" className="font-normal text-base">
@@ -51,7 +51,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="">
-            <h2 className="text-[#fff]/[0.6]">Resources</h2>
+            <h2 className="text-[#fff]/[0.6] pb-1">Resources</h2>
             <ul className="space-y-2">
               <li>
                 <a href="#blog" className="font-normal text-base">
@@ -81,7 +81,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="">
-            <h2 className="text-[#fff]/[0.6]">Company</h2>
+            <h2 className="text-[#fff]/[0.6] pb-1">Company</h2>
             <ul className="space-y-2">
               <li>
                 <a href="#product" className="font-normal text-base">
