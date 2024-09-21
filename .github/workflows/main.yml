@@ -8,11 +8,28 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: enriikke/gatsby-gh-pages-action@v2
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Install Node.js version
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
-          deploy-branch: gh-pages
-          gatsby-args: --prefix-paths
-          node-version: "20.17.0"
+          node-version: "20"
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Build Gatsby site
+      - name: Build Gatsby
+        run: npm run build
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          publish_dir: ./public
