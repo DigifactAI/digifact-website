@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="w-4/5 m-auto py-8">
         <div className="w-full grid grid-cols-4 gap-4 max-[640px]:grid-cols-2">
           <div className="max-[640px]:mb-4">
-            <h1 className="logo pb-1">DigiFact</h1>
+            <h1 className="logo pb-1 text-2xl">DigiFact</h1>
             <ul className="flex gap-4">
               <li>
                 <i className="fa-solid fa-envelope"></i>
