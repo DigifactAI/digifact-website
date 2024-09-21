@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdigifact_website=self.webpackChunkdigifact_website||[]).push([[7],{5502:function(e,t,a){a.r(t);var n=a(7294),c=a(4318);t.default=()=>n.createElement(c.Z,null,n.createElement("main",{className:"page-container"},n.createElement("h1",{className:"text-center my-20 text-3xl"},"Coming Soon!")))}}]);
+//# sourceMappingURL=component---src-pages-blog-js-56162ce5fc33c427c7b3.js.map
