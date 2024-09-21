@@ -1,4 +1,4 @@
-name: Publish changes to Main
+name: Build
 
 on:
   push:
