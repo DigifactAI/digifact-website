@@ -1,11 +1,14 @@
 import React, { useState } from "react";
+import { useLocation } from "@reach/router";
 import { motion } from "framer-motion";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Header = () => {
+  const location = useLocation();
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [showMenuCollapse, setShowMenuCollapse] = useState(false);
   const [showSolutionsCollapse, setShowSolutionsCollapse] = useState(false);
+  const isHomePage = location.pathname === "/";
 
   const toggleMenu = () => {
     setShowMobileMenu(!showMobileMenu);
@@ -27,7 +30,7 @@ const Header = () => {
             <a
               aria-current="page"
               className="group transition-colors duration-200"
-              href="./"
+              href="/"
             >
               <span className="sr-only">DigiFact Logo</span>
               <div className="logo">DigiFact</div>
@@ -86,7 +89,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#blog"
+                  href="/blog"
                   className="flex items-center px-3.5 py-5 text-10 transition-colors duration-200 hover:text-blue xl:px-2.5 text-lg font-normal"
                 >
                   <span>Blog</span>
@@ -94,7 +97,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#about"
+                  href={isHomePage ? "#about" : "/#about"}
                   className="flex items-center px-3.5 py-5 text-10 transition-colors duration-200 hover:text-blue xl:px-2.5 text-lg font-normal"
                 >
                   <span>About us</span>
@@ -102,7 +105,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href={isHomePage ? "#contact" : "/#contact"}
                   className="flex items-center px-3.5 py-5 text-10 transition-colors duration-200 hover:text-blue xl:px-2.5 text-lg font-normal"
                 >
                   <span>Contact</span>
