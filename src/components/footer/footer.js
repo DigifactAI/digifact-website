@@ -94,7 +94,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#careers" className="font-normal text-base">
+                <a href="/careers" className="font-normal text-base">
                   <span className="careers-shining-animation">Careers</span>
                   <span className="text-xs absolute ml-2 bg-[#fff3cd] text-[#664d03] hiring-ribbon">
                     We're hiring
